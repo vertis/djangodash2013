@@ -61,7 +61,7 @@ STATIC_ROOT = root("static")
 
 # URL prefix for static files.
 # Example: "http://example.com/static/", "http://static.example.com/"
-STATIC_URL = '/static/'
+STATIC_URL = '/assets/'
 
 # Additional locations of static files
 STATICFILES_DIRS = (
@@ -120,8 +120,12 @@ DJANGO_APPS = (
     'django.contrib.admin',
 )
 
-THIRD_PARTY_APPS = ()
-LOCAL_APPS = ()
+THIRD_PARTY_APPS = (
+    'south',
+)
+LOCAL_APPS = ( 
+    'home',
+)
 
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
 
