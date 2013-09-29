@@ -1,9 +1,22 @@
 <!doctype html>
 <html>
     <head>
+		<link href="/assets/bootstrap/css/bootstrap.css" rel="stylesheet">
         <title>Optimal | {% block page_title %}{% endblock %}</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        {% block page_content %}{% endblock %}
+		<nav class="navbar navbar-default" role="navigation">
+			<div class="container">
+	  		  <!-- Brand and toggle get grouped for better mobile display -->
+	  		  <div class="navbar-header">
+	  		    <a class="navbar-brand" href="#">Brand</a>
+	  		  </div>
+			</div>
+	    </nav>
+		<div class="container">
+  		  {% block page_content %}{% endblock %}
+		</div>
+        
     </body>
 </html>
